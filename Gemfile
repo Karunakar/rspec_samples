@@ -9,6 +9,7 @@ gem 'mysql2'
 gem 'borg' , :git => 'git://github.com/Karunakar/borg.git'
 # Use unicorn as the web server
 
+gem 'cucumber'
 gem 'configatron'
 # gem 'unicorn'
 
@@ -31,4 +32,5 @@ gem 'configatron'
  group  :test do
 	gem "rspec", "2.0.0.a5"
 	gem "rspec-rails", "2.0.0.a6"
+	gem 'cucumber'
  end
