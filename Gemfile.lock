@@ -83,10 +83,10 @@ GEM
       thor (~> 0.14.4)
     rake (0.8.7)
     redis (2.1.1)
-    rspec (2.0.0.a5)
-      rspec-core (>= 2.0.0.a5)
-      rspec-expectations (>= 2.0.0.a5)
-      rspec-mocks (>= 2.0.0.a5)
+    rspec (2.5.0)
+      rspec-core (~> 2.5.0)
+      rspec-expectations (~> 2.5.0)
+      rspec-mocks (~> 2.5.0)
     rspec-core (2.5.1)
     rspec-expectations (2.5.0)
       diff-lcs (~> 1.1.2)
@@ -114,5 +114,5 @@ DEPENDENCIES
   cucumber
   mysql2
   rails (= 3.0.3)
-  rspec (= 2.0.0.a5)
-  rspec-rails (= 2.0.0.a6)
+  rspec (~> 2.4)
+  rspec-rails
