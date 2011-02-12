@@ -30,7 +30,7 @@ gem 'configatron'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
  group  :test do
-	gem "rspec", "2.0.0.a5"
+	gem "rspec","~> 2.4"
 	gem "rspec-rails", "2.0.0.a6"
 	gem 'cucumber'
  end
