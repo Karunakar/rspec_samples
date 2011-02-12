@@ -21,6 +21,7 @@ gem "borg", :path => "~/projects/borg"
 
 group :test, :development do
   gem "rspec-rails", "~> 2.4"
+  gem "cucumber"
 end
 
 # Bundle the extra gems:

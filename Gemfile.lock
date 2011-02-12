@@ -93,6 +93,8 @@ PLATFORMS
 
 DEPENDENCIES
   borg!
+  eventmachine
   mysql2
   rails (= 3.0.3)
+  redis
   rspec-rails (~> 2.4)
