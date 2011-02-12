@@ -23,6 +23,7 @@ gem "borg", :path => "~/projects/borg"
 group :test, :development,:cucumber do
   gem "rspec-rails", "~> 2.4"
   gem "cucumber"
+  gem "webrat"
 end
 
 # gem 'bj'
