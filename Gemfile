@@ -24,7 +24,10 @@ group :test, :development do
   gem "cucumber"
 end
 
-# Bundle the extra gems:
+group :test, :development do
+  gem "rspec-rails", "~> 2.4"
+  gem "cucumber"
+end
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
