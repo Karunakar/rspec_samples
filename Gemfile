@@ -31,6 +31,8 @@ gem 'configatron'
 # and rake tasks are available in development mode:
  group  :test do
 	gem "rspec","~> 2.4"
+	gem "rspec-core"
+	gem "rspec-mocks"
 	gem "rspec-rails"
 	gem 'cucumber'
  end
