@@ -3,4 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 vendor/ruby
+vendor/bundle
 .idea
