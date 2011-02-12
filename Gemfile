@@ -19,15 +19,11 @@ gem "eventmachine"
 # gem 'ruby-debug19'
 gem "borg", :path => "~/projects/borg"
 
-group :test, :development do
+group :test, :development,:cucumber do
   gem "rspec-rails", "~> 2.4"
   gem "cucumber"
 end
 
-group :cucumber, :development do
-  gem "rspec-rails", "~> 2.4"
-  gem "cucumber"
-end
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
