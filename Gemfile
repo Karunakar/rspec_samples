@@ -24,7 +24,7 @@ group :test, :development do
   gem "cucumber"
 end
 
-group :test, :development do
+group :cucumber, :development do
   gem "rspec-rails", "~> 2.4"
   gem "cucumber"
 end
