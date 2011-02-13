@@ -12,21 +12,46 @@ gem 'mysql2'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-gem "ramaze"
-gem "redis"
 gem "eventmachine"
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
 # gem 'ruby-debug19'
 gem "borg", :path => "~/projects/borg"
 
-group :test, :development,:cucumber do
-  gem "rspec-rails", "~> 2.4"
-  gem "cucumber"
-  gem "webrat"
+
+group :test do
+  gem 'shoulda',:git => "git://github.com/castlerock/shoulda.git"
+  gem "factory_girl_rails"
+  gem "mocha", :require => false
+  gem "redis", "0.1.2"
+  gem 'selenium-client',  '1.2.18'
+  gem 'ruby-debug'
+  gem 'webmock', '~> 1.6.2'
 end
 
-gem "rubypython"
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-deepmodules'
+  gem 'capistrano-ext'
+  gem 'mongrel'
+  gem 'ruby-debug'
+end
+
+group :cucumber do
+  gem "factory_girl_rails"
+  gem "database_cleaner",  ">= 0.4.3"
+  gem "cucumber", '0.10.0'
+  gem "cucumber-rails", "0.3.2"
+  gem "jbd-webrat", :git => "git://github.com/castlerock/webrat.git"
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'email_spec', '1.1.1'
+  gem "johnson", '1.2.0'
+  gem "launchy", "0.3.5"
+  gem "treetop", "1.4.9"
+end
+
+
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
