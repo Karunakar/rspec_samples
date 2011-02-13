@@ -26,6 +26,7 @@ group :test, :development,:cucumber do
   gem "webrat"
 end
 
+gem "rubypython"
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
