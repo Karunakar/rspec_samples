@@ -51,6 +51,7 @@ group :cucumber do
   gem "treetop", "1.4.9"
 end
 
+gem "ramaze"
 
 # gem 'bj'
 # gem 'nokogiri'
