@@ -9,7 +9,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sample_tests_development
+  database: rspec_samples_development
   pool: 5
   username: root
   password:
@@ -21,7 +21,7 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sample_tests_test
+  database: rspec_samples_test
   pool: 5
   username: root
   password:
@@ -30,7 +30,7 @@ cucumber:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sample_tests_production
+  database: rspec_samples_cucumber 
   pool: 5
   username: root
   password:
