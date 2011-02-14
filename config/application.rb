@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
+configatron.configure_from_yaml(File.expand_path("../config.yml", __FILE__), :hash => Rails.env)
+
 module SampleTests
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

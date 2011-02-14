@@ -1,0 +1,19 @@
+# All session timeouts are specified in minutes
+development: &local
+  redis_ip: "172.18.0.118"
+  redis_port: 6379
+  build_server_ip: "172.18.0.118"
+  build_server_port: 10001
+  build_test_unit_processes: 3
+  build_cucumber_processes: 1
+production:
+  <<: *local
+
+test:
+  <<: *local
+
+testing:
+  <<: *local
+
+cucumber:
+  <<: *local

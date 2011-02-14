@@ -10,6 +10,7 @@ gem 'mysql2'
 # Use unicorn as the web server
 # gem 'unicorn'
 
+gem 'configatron'
 # Deploy with Capistrano
 # gem 'capistrano'
 gem "eventmachine"
@@ -20,11 +21,11 @@ gem "borg", :path => "~/projects/borg"
 
 
 group :test do
-  gem 'shoulda',:git => "git://github.com/castlerock/shoulda.git"
+  gem 'shoulda', :git => "git://github.com/castlerock/shoulda.git"
   gem "factory_girl_rails"
   gem "mocha", :require => false
   gem "redis", "0.1.2"
-  gem 'selenium-client',  '1.2.18'
+  gem 'selenium-client', '1.2.18'
   gem 'ruby-debug'
   gem 'webmock', '~> 1.6.2'
 end
@@ -39,7 +40,7 @@ end
 
 group :cucumber do
   gem "factory_girl_rails"
-  gem "database_cleaner",  ">= 0.4.3"
+  gem "database_cleaner", ">= 0.4.3"
   gem "cucumber", '0.10.0'
   gem "cucumber-rails", "0.3.2"
   gem "jbd-webrat", :git => "git://github.com/castlerock/webrat.git"

@@ -64,6 +64,8 @@ GEM
       capistrano (>= 1.0.0)
     cgi_multipart_eof_fix (2.5.0)
     columnize (0.3.2)
+    configatron (2.6.4)
+      yamler (>= 0.1.0)
     configuration (1.2.0)
     crack (0.1.8)
     cucumber (0.10.0)
@@ -171,6 +173,7 @@ GEM
     webmock (1.6.2)
       addressable (>= 2.2.2)
       crack (>= 0.1.7)
+    yamler (0.1.0)
 
 PLATFORMS
   ruby
@@ -180,6 +183,7 @@ DEPENDENCIES
   capistrano
   capistrano-deepmodules
   capistrano-ext
+  configatron
   cucumber (= 0.10.0)
   cucumber-rails (= 0.3.2)
   database_cleaner (>= 0.4.3)
