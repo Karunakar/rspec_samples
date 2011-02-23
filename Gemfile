@@ -38,30 +38,19 @@ group :development do
   gem 'ruby-debug'
 end
 
+
+
 group :cucumber do
   gem "factory_girl_rails"
-  gem "database_cleaner", ">= 0.4.3"
+  gem "database_cleaner",  ">= 0.4.3"
   gem "cucumber", '0.10.0'
   gem "cucumber-rails", "0.3.2"
-  gem "jbd-webrat", :git => "git://github.com/castlerock/webrat.git"
   gem 'rspec'
   gem 'rspec-rails'
   gem 'email_spec', '1.1.1'
   gem "johnson", '1.2.0'
   gem "launchy", "0.3.5"
-  gem "treetop", "1.4.9"
+  gem "capybara"
+  gem "treetop", "1.4.8"
 end
 
-gem "ramaze"
-
-# gem 'bj'
-# gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end

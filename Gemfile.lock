@@ -4,19 +4,10 @@ GIT
   specs:
     shoulda (2.11.3)
 
-GIT
-  remote: git://github.com/castlerock/webrat.git
-  revision: 54b91a6bc761d95c4e5d6955e07b8630f865e15d
-  specs:
-    jbd-webrat (0.7.2.rails3)
-      nokogiri (>= 1.2.0)
-      rack (>= 1.0)
-      rack-test (>= 0.5.3)
-
 PATH
   remote: ~/projects/borg
   specs:
-    borg (0.0.8)
+    borg (0.0.21)
       eventmachine
       redis
 
@@ -51,7 +42,7 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     addressable (2.2.4)
-    arel (2.0.7)
+    arel (2.0.8)
     builder (2.1.2)
     capistrano (2.5.19)
       highline
@@ -62,7 +53,19 @@ GEM
     capistrano-deepmodules (0.2)
     capistrano-ext (1.2.1)
       capistrano (>= 1.0.0)
+    capybara (0.4.1.2)
+      celerity (>= 0.7.9)
+      culerity (>= 0.2.4)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (>= 0.0.27)
+      xpath (~> 0.1.3)
+    celerity (0.8.8)
     cgi_multipart_eof_fix (2.5.0)
+    childprocess (0.1.7)
+      ffi (~> 0.6.3)
     columnize (0.3.2)
     configatron (2.6.4)
       yamler (>= 0.1.0)
@@ -76,8 +79,9 @@ GEM
       term-ansicolor (~> 1.0.5)
     cucumber-rails (0.3.2)
       cucumber (>= 0.8.0)
+    culerity (0.2.15)
     daemons (1.1.0)
-    database_cleaner (0.6.3)
+    database_cleaner (0.6.4)
     diff-lcs (1.1.2)
     email_spec (1.1.1)
       rspec (~> 2.0)
@@ -89,15 +93,16 @@ GEM
       factory_girl (~> 1.3)
       railties (>= 3.0.0)
     fastthread (1.0.7)
+    ffi (0.6.3)
+      rake (>= 0.8.7)
     gem_plugin (0.2.3)
     gherkin (2.3.3)
       json (~> 1.4.6)
     highline (1.6.1)
     i18n (0.5.0)
-    innate (2011.01)
-      rack (>= 1.1.0)
     johnson (1.2.0)
     json (1.4.6)
+    json_pure (1.5.1)
     launchy (0.3.5)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -143,8 +148,6 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
-    ramaze (2011.01.30)
-      innate (>= 2010.03)
     redis (0.1.2)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
@@ -164,15 +167,23 @@ GEM
       ruby-debug-base (~> 0.10.4.0)
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
+    rubyzip (0.9.4)
     selenium-client (1.2.18)
+    selenium-webdriver (0.1.3)
+      childprocess (~> 0.1.5)
+      ffi (~> 0.6.3)
+      json_pure
+      rubyzip
     term-ansicolor (1.0.5)
     thor (0.14.6)
-    treetop (1.4.9)
+    treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.24)
     webmock (1.6.2)
       addressable (>= 2.2.2)
       crack (>= 0.1.7)
+    xpath (0.1.3)
+      nokogiri (~> 1.3)
     yamler (0.1.0)
 
 PLATFORMS
@@ -183,6 +194,7 @@ DEPENDENCIES
   capistrano
   capistrano-deepmodules
   capistrano-ext
+  capybara
   configatron
   cucumber (= 0.10.0)
   cucumber-rails (= 0.3.2)
@@ -190,19 +202,17 @@ DEPENDENCIES
   email_spec (= 1.1.1)
   eventmachine
   factory_girl_rails
-  jbd-webrat!
   johnson (= 1.2.0)
   launchy (= 0.3.5)
   mocha
   mongrel
   mysql2
   rails (= 3.0.3)
-  ramaze
   redis (= 0.1.2)
   rspec
   rspec-rails
   ruby-debug
   selenium-client (= 1.2.18)
   shoulda!
-  treetop (= 1.4.9)
+  treetop (= 1.4.8)
   webmock (~> 1.6.2)
