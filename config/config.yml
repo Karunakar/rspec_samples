@@ -6,7 +6,7 @@ development: &local
   build_server_port: 10001
   build_test_unit_processes: 3
   build_cucumber_processes: 1
-  test_framework: "rake spec"
+  test_unit_framework: "rake spec"
 production:
   <<: *local
 
