@@ -17,7 +17,7 @@ gem "eventmachine"
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
 # gem 'ruby-debug19'
-gem "borg", :path => "~/projects/borg"
+gem "borg", :path => "~/projects/karunakar/borg"
 
 
 group :test do
@@ -40,7 +40,7 @@ end
 
 
 
-group :cucumber do
+group :cucumber, :test do
   gem "factory_girl_rails"
   gem "database_cleaner",  ">= 0.4.3"
   gem "cucumber", '0.10.0'

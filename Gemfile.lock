@@ -5,7 +5,7 @@ GIT
     shoulda (2.11.3)
 
 PATH
-  remote: ~/projects/borg
+  remote: ~/projects/karunakar/borg
   specs:
     borg (0.0.21)
       eventmachine
