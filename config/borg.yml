@@ -5,3 +5,5 @@ port: 10001
 test_unit_processes: 2
 cucumber_processes: 3
 inactivity_timeout: 200
+test_unit_framework: "rake spec"
+
